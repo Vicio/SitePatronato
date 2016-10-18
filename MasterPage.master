@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head runat="server">
+        <title>Patronato - UAQ</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script type="text/javascript" src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>js/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="<%= ConfigurationManager.AppSettings["directorioServidor"]%>css/fuentes.css" />
+        <link rel="stylesheet" href="<%= ConfigurationManager.AppSettings["directorioServidor"]%>css/fixes.css" />
+        <link rel="stylesheet" href="<%= ConfigurationManager.AppSettings["directorioServidor"]%>css/theme.min.css" />
+        <link rel="stylesheet" href="<%= ConfigurationManager.AppSettings["directorioServidor"]%>css/colores.css" />
+        <asp:ContentPlaceHolder runat="server" ID="Encabezado"></asp:ContentPlaceHolder>
+    </head>
+    <body>
+        <form id="formaPrincipal" runat="server">
+            <div id="carouselPrincipal" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselPrincipal" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselPrincipal" data-slide-to="1"></li>
+                    <li data-target="#carouselPrincipal" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="#"><img src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>images/banners/banner1.jpg" alt="Patronato" /></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>images/banners/banner2.jpg" alt="Patronato" /></a>
+                    </div>
+                    <div class="item">
+                        <a href="#"><img src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>images/banners/banner3.jpg" alt="Patronato" /></a>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#carouselPrincipal" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previa</span>
+                </a>
+                <a class="right carousel-control" href="#carouselPrincipal" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+            <asp:ContentPlaceHolder id="Contenido" runat="server">
+        
+            </asp:ContentPlaceHolder>
+            <div class="container-fluid color-bg-footer-sup color-texto-footer line-feed-sm">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-2 col-sm-offset-1 line-feed-sm">
+                            <img src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>images/logo_patronato_blanco.png" />
+                        </div>
+                        <div class="col-sm-4 col-sm-offset-1 line-feed-xs">
+                            <div class="row">
+                                <h3>CONTACTO</h3>
+                                <h4>PATRONATO DE LA UNIVERSIDAD AUTÓNOMA DE QUERÉTARO, A.C.</h4>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <img src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>images/logo_ubicacion.png" />
+                                </div>
+                                <div class="col-xs-10">
+                                    <p>Prolongación Corregidora Sur #21-104, Col. Centro C.P. 76000, Santiago de Querétaro, Querétaro</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <img src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>images/logo_correo.png" />
+                                </div>
+                                <div class="col-xs-10">
+                                    <a href="mailto:patronato@uaq.mx"><p>patronato@uaq.mx</p></a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-1">
+                                    <img src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>images/logo_telefono.png" />
+                                </div>
+                                <div class="col-xs-10">
+                                    <p>442-212-1335</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row line-feed-sm">
+
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid color-bg-footer-inf color-texto-footer">
+                <div class="container">
+                    <div class="row line-feed-xs">
+                        <div class="col-sm-8">
+                            <p>2016 Todos los derechos reservados, Coordinación General de Servicios de Informatización <br />Universidad Autónoma de Querétaro</p>
+                        </div>
+                        <div class="col-sm-2 col-sm-offset-2">
+                            <a href="https://www.facebook.com/patronato.uaqac" >
+                                <img src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>images/logo_facebok.png" class="pull-right"/>
+                            </a>
+                            <a href="https://twitter.com/patronatouaq">
+                                <img src="<%= ConfigurationManager.AppSettings["directorioServidor"]%>images/logo_twiter.png" class="pull-right"/>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row line-feed-xs">
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

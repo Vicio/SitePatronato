@@ -1,0 +1,37 @@
+﻿.wrapper
+{
+    position:relative;
+}
+
+.wrapper .glyphicon
+{
+    position:absolute;
+    top:-50px;
+    left:40%;
+}
+
+
+.line-feed-lg
+{
+    margin-top:120px;
+}
+
+.line-feed-md
+{
+    margin-top:90px;
+}
+
+.line-feed-sm
+{
+    margin-top:60px;
+}
+
+.line-feed-xs
+{
+    margin-top:30px;
+}
+
+.logo_separador
+{
+    margin-top:-35px;
+}

@@ -1,0 +1,37 @@
+﻿/*Fuentes globales para la página*/
+@font-face
+{
+    font-family: "Futura Std Light";
+    src:
+        url('/fonts/FuturaStd-Book.otf') format('opentype'),
+        url('/fonts/FuturaStd-Light.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "Futura Std Book";
+    src:
+        url('/fonts/FuturaStd-Book.otf') format('opentype'),
+        url('/fonts/FuturaStd-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "Futura Std Medium";
+    src:
+        url('/fonts/FuturaStd-Medium.otf') format('opentype'),
+        url('/fonts/FuturaStd-Medium.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
+@font-face
+{
+    font-family: "Futura Std Heavy";
+    src:
+        url('/fonts/FuturaStd-Heavy.otf') format('opentype'),
+        url('/fonts/FuturaStd-Heavy.woff') format('woff');
+    font-weight:normal;
+    font-style: normal;
+}
